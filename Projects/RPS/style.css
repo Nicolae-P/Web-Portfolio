@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(255,235,215);
+    background: radial-gradient(circle, rgba(255,235,215,1) 0%, rgba(255,172,93,1) 100%);
+}
+
+#versus {
+    font-size: 2em;
+    margin: 20px;
+}
+
+#computer-area {
+    text-align: center; 
+}
+
+#computer-choice-label {
+    margin-bottom: 40px; 
+    font-size: 1.2em; 
+}
+
+.game-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#choices, #computer-choice {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choice, #computer-choice img {
+    margin: 0 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: auto; 
+    max-width: 100px;
+    height: auto; 
+}
+
+#computer-choice img {
+    max-width: 150px;
+}
+
+.choice:hover {
+    transform: scale(1.1);
+}
+
+.computer-choice-animate {
+    transform: scale(1.2);
+}
+
+#result {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#scoreboard div {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .choice {
+        max-width: 60px;
+    }
+
+    #result {
+        font-size: 1em;
+    }
+}
